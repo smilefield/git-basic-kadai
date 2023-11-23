@@ -1,0 +1,34 @@
+PS C:\Users\nabez> cd git_tutorial 
+PS C:\Users\nabez\git_tutorial> mkdir git_chellenge
+
+
+    ディレクトリ: C:\Users\nabez\git_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/11/21     23:36                git_chellenge
+
+
+PS C:\Users\nabez\git_tutorial> cd git_chellenge
+PS C:\Users\nabez\git_tutorial\git_chellenge> git init
+Initialized empty Git repository in C:/Users/nabez/git_tutorial/git_chellenge/.git/
+PS C:\Users\nabez\git_tutorial\git_chellenge> echo "Hello world!" >> hello_world.txt
+PS C:\Users\nabez\git_tutorial\git_chellenge> git add hello_world.txt
+PS C:\Users\nabez\git_tutorial\git_chellenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 6261a28] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 hello_world.txt
+PS C:\Users\nabez\git_tutorial\git_chellenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\nabez\git_tutorial\git_chellenge> git add hello_world.txt
+PS C:\Users\nabez\git_tutorial\git_chellenge> git commit -m "日本語訳を追記" 
+[main 3ee77a8] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\nabez\git_tutorial\git_chellenge> git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS C:\Users\nabez\git_tutorial\git_chellenge> git log --oneline
+3ee77a8 (HEAD -> main) 日本語訳を追記
+6261a28 hello_world.txtを追加
+PS C:\Users\nabez\git_tutorial\git_chellenge> 
